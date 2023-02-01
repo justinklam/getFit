@@ -19,6 +19,18 @@ module.exports = {
           "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(85,9,121,1) 35%, rgba(0,212,255,1) 100%);",
         "mobile-home": "url('./assets/HomePageGraphic.png')",
       }),
+      fontFamily: {
+        dmsans: ["DM Sans", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+      },
+      content: {
+      },
+    },
+    screens: {
+      xs: "480px",
+      sm: "768px",
+      md: "1060px",
+    },
   },
   plugins: [],
 };
