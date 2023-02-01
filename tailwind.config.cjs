@@ -17,13 +17,17 @@ module.exports = {
       backgroundImage: (theme) => ({
         "gradient-blue-purple":
           "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(85,9,121,1) 35%, rgba(0,212,255,1) 100%);",
-        "mobile-home": "url('./assets/HomePageGraphic.png')",
+        "mobile-home": "url('./assets/homePageGraphic.jpeg')",
       }),
       fontFamily: {
         dmsans: ["DM Sans", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
       },
       content: {
+        logotext: "url('./assets/text-no-bg.png')",
+        abstractwaves: "url('./assets/abstractWaves.png')",
+        circles: "url('./assets/circles.png')",
+        sparkles: "url('./assets/sparkles.png')",
       },
     },
     screens: {
