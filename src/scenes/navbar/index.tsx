@@ -9,7 +9,13 @@ type Props = {};
 const Navbar = (props: Props) => {
   const flexBetween = "flex items-center justify-between";
 
-  return <div>Navbar</div>;
+  return (
+    <nav>
+      <div className={`${flexBetween} fixed top-0 z-30 w-full py-6 opacity-5`}>
+        <div className={`${flexBetween} mx-auto w-5/6`}></div>
+      </div>
+    </nav>
+  );
 };
 
 export default Navbar;
