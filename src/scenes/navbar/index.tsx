@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 // Image assets
-import Logo from "@/assets/Logo.png";
+import Logo from "@/assets/logo-no-bg.png";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 type Props = {};
@@ -11,7 +11,7 @@ const Navbar = (props: Props) => {
 
   return (
     <nav>
-      <div className={`${flexBetween} fixed top-0 z-30 w-full py-6 opacity-5`}>
+      <div className={`${flexBetween} fixed top-0 z-30 w-full py-6`}>
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} gap-15 w-full`}>
             {/* Left Side */}
@@ -28,7 +28,10 @@ const Navbar = (props: Props) => {
               </div>
 
               {/* Sign-In */}
-              <div></div>
+              <div>
+                <p>Sign-In</p>
+                <button>Become a Member</button>
+              </div>
             </div>
           </div>
         </div>
