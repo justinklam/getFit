@@ -1,5 +1,8 @@
 import { useState } from "react";
 
+// Components
+import Link from "./Link";
+
 // Image assets
 import Logo from "@/assets/logo-no-bg-sm.png";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
@@ -21,10 +24,26 @@ const Navbar = (props: Props) => {
             <div className={`${flexBetween} w-full`}>
               {/* Links */}
               <div className={`${flexBetween} gap-8 text-sm`}>
-                <p>Home</p>
-                <p>Benefits</p>
-                <p>Classes</p>
-                <p>Contact Us</p>
+                <Link
+                  page="Home"
+                  selectedPage={selectedPage}
+                  setSelectedPage={setSelectedPage}
+                />
+                <Link
+                  page="Benefits"
+                  selectedPage={selectedPage}
+                  setSelectedPage={setSelectedPage}
+                />
+                <Link
+                  page="Our Classes"
+                  selectedPage={selectedPage}
+                  setSelectedPage={setSelectedPage}
+                />
+                <Link
+                  page="Contact Us"
+                  selectedPage={selectedPage}
+                  setSelectedPage={setSelectedPage}
+                />
               </div>
 
               {/* Sign-In */}
