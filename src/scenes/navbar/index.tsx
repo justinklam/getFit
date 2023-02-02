@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 // Image assets
-import Logo from "@/assets/logo-no-bg.png";
+import Logo from "@/assets/logo-no-bg-sm.png";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 type Props = {};
@@ -15,7 +15,7 @@ const Navbar = (props: Props) => {
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} gap-15 w-full`}>
             {/* Left Side */}
-            <img src={Logo} alt="logo" />
+            <img className="" src={Logo} alt="logo" />
 
             {/* Right Side */}
             <div className={`${flexBetween} w-full`}>
