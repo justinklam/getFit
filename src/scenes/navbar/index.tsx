@@ -7,9 +7,12 @@ import Link from "./Link";
 import Logo from "@/assets/logo-no-bg-sm.png";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
-type Props = {};
+type Props = {
+  selectedPage: string;
+  setSelectedPage: (value: string) => void;
+};
 
-const Navbar = (props: Props) => {
+const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
   const flexBetween = "flex items-center justify-between";
 
   return (
