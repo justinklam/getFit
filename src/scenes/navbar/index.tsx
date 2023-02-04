@@ -16,7 +16,7 @@ type Props = {
 
 const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
   const flexBetween = "flex items-center justify-between";
-  const isAboveMediumScreens = useMediaQuery("(min-width: 1060)");
+  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
   return (
     <nav>
@@ -27,37 +27,42 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
             <img className="" src={Logo} alt="logo" />
 
             {/* Right Side */}
-            <div className={`${flexBetween} w-full`}>
-              {/* Links */}
-              <div className={`${flexBetween} gap-8 text-sm`}>
-                <Link
-                  page="Home"
-                  selectedPage={selectedPage}
-                  setSelectedPage={setSelectedPage}
-                />
-                <Link
-                  page="Benefits"
-                  selectedPage={selectedPage}
-                  setSelectedPage={setSelectedPage}
-                />
-                <Link
-                  page="Our Classes"
-                  selectedPage={selectedPage}
-                  setSelectedPage={setSelectedPage}
-                />
-                <Link
-                  page="Contact Us"
-                  selectedPage={selectedPage}
-                  setSelectedPage={setSelectedPage}
-                />
-              </div>
+            {isAboveMediumScreens ? (
+              <div className={`${flexBetween} w-full`}>
+                {/* Links */}
+                <div className={`${flexBetween} gap-8 text-sm`}>
+                  <Link
+                    page="Home"
+                    selectedPage={selectedPage}
+                    setSelectedPage={setSelectedPage}
+                  />
+                  <Link
+                    page="Benefits"
+                    selectedPage={selectedPage}
+                    setSelectedPage={setSelectedPage}
+                  />
+                  <Link
+                    page="Our Classes"
+                    selectedPage={selectedPage}
+                    setSelectedPage={setSelectedPage}
+                  />
+                  <Link
+                    page="Contact Us"
+                    selectedPage={selectedPage}
+                    setSelectedPage={setSelectedPage}
+                  />
+                </div>
 
-              {/* Sign-In */}
-              <div className={`${flexBetween} gap-8`}>
-                <p>Sign-In</p>
-                <button>Become a Member</button>
+                {/* Sign-In */}
+                <div className={`${flexBetween} gap-8`}>
+                  <p>Sign-In</p>
+                  <button>Become a Member</button>
+                </div>
               </div>
-            </div>
+            ) : (
+              // Mobile
+              <button className="rounded-full bg-secondary-500 p-2"></button>
+            )}
           </div>
         </div>
       </div>
