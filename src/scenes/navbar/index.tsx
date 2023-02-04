@@ -15,6 +15,7 @@ type Props = {
 };
 
 const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
+  const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const flexBetween = "flex items-center justify-between";
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
@@ -61,7 +62,10 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
               </div>
             ) : (
               // Mobile
-              <button className="rounded-full bg-secondary-500 p-2"></button>
+              <button
+                className="rounded-full bg-secondary-500 p-2"
+                onClick={() => setIsMenuToggled(!isMenuToggled)}
+              ></button>
             )}
           </div>
         </div>
