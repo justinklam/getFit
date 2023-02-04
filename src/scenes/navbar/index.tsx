@@ -77,7 +77,12 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
       </div>
       {/* Mobile Modal */}
       {!isAboveMediumScreens && isMenuToggled && (
-        <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl"></div>
+        <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl">
+          {/* Closing Icon */}
+          <div className="flex justify-end p-12">
+            <button onClick={() => setIsMenuToggled(!isMenuToggled)}></button>
+          </div>
+        </div>
       )}
     </nav>
   );
