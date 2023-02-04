@@ -10,8 +10,8 @@ type Props = {
 };
 
 const Link = ({ page, selectedPage, setSelectedPage }: Props) => {
-  // regEx replaces all empty spaces
-  const lowerCasePage = page.toLowerCase().replace(/ /g, "");
+  // regEx replaces all empty spaces and to convert to lowerCase
+  const lowerCasePage = page.toLowerCase().replace(/ /g, "") as SelectedPage;
 
   return (
     <AnchorLink
