@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { SelectedPage } from "@/shared/types";
 
 // Components
 import Link from "./Link";
@@ -8,8 +9,8 @@ import Logo from "@/assets/logo-no-bg-sm.png";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 type Props = {
-  selectedPage: string;
-  setSelectedPage: (value: string) => void;
+  selectedPage: SelectedPage;
+  setSelectedPage: (value: SelectedPage) => void;
 };
 
 const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
