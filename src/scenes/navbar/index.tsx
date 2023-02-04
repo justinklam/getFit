@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { SelectedPage } from "@/shared/types";
+import useMediaQuery from "@/hooks/useMediaQuery";
 
 // Components
 import Link from "./Link";
@@ -15,6 +16,7 @@ type Props = {
 
 const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
   const flexBetween = "flex items-center justify-between";
+  const isAboveMediumScreens = useMediaQuery("(min-width: 1060)");
 
   return (
     <nav>
