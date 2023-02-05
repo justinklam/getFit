@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { SelectedPage } from "@/shared/types";
 
 // Components
@@ -9,6 +9,16 @@ function App() {
     SelectedPage.Home
   );
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Check to see if we're at the top of the page
+      if (window.scrollY === 0) {
+        setIsTopOfPage(true);
+        setSelectedPage(SelectedPage.Home);
+      }
+    };
+  });
 
   return (
     <div className="app bg-gray-20">
