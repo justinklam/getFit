@@ -15,10 +15,16 @@ function App() {
       // Check to see if we're at the top of the page
       if (window.scrollY === 0) {
         setIsTopOfPage(true);
+        // SelectedPage is Home so that it's highlighted
         setSelectedPage(SelectedPage.Home);
       }
+      if (window.scrollY !== 0) setIsTopOfPage(false);
     };
-  });
+    window.addEventListener("scroll", handleScroll);
+    // return for when component unMounts
+    // remove eventListener incase of memory leaks
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div className="app bg-gray-20">
