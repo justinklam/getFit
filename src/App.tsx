@@ -20,6 +20,7 @@ function App() {
       }
       if (window.scrollY !== 0) setIsTopOfPage(false);
     };
+    // eventListener added to the window
     window.addEventListener("scroll", handleScroll);
     // return for when component unMounts
     // remove eventListener incase of memory leaks
