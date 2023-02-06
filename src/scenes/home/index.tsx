@@ -68,6 +68,19 @@ const Home = ({ setSelectedPage }: Props) => {
           />
         </div>
       </div>
+
+      {/* Sponsers & Partners */}
+      {isAboveMediumScreens && (
+        <div>
+          <div>
+            <div>
+              <img src={Sponser1} alt="sponser-1" />
+              <img src={Sponser2} alt="sponser-2" />
+              <img src={Sponser3} alt="sponser-3" />
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
