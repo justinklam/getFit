@@ -20,7 +20,40 @@ const Home = ({ setSelectedPage }: Props) => {
     // anchor is set for anchor-link-scroll for navigation
     // media query - apply full above medium screen
     <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
-      Home
+      {/* Image & Main Header */}
+      <div>
+        {/* Main Header */}
+        <div>
+          {/* Headings */}
+          <div>
+            <div>
+              <div>
+                <img src={HomePageText} alt="home-page-text" />
+              </div>
+            </div>
+
+            <p>
+              A gym for everyone. Discover the ultimate fitness experience at
+              our gym where bouldering, yoga, and weightlifting come together.
+              Our bouldering wall offers challenges for all skill levels, our
+              yoga studio provides peace and relaxation, and our weightlifting
+              area is equipped with state-of-the-art equipment. Find the perfect
+              balance of physical challenge, mindfulness, and strength-building
+              at our unique gym!
+            </p>
+          </div>
+
+          {/* Actions */}
+          <div>
+            <ActionButton setSelectedPage={setSelectedPage}>
+              Join Now
+            </ActionButton>
+          </div>
+        </div>
+
+        {/* Image */}
+        <div></div>
+      </div>
     </section>
   );
 };
