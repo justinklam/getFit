@@ -14,7 +14,15 @@ type Props = {
 };
 
 const Home = ({ setSelectedPage }: Props) => {
-  return <div>Home</div>;
+  const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
+
+  return (
+    // anchor is set for anchor-link-scroll for navigation
+    // media query - apply full above medium screen
+    <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
+      Home
+    </section>
+  );
 };
 
 export default Home;
