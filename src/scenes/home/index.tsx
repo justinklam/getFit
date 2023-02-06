@@ -1,6 +1,7 @@
 import { SelectedPage } from "@/shared/types";
 import ActionButton from "@/shared/ActionButton";
 import useMediaQuery from "@/hooks/useMediaQuery";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 // Image assets
 import HomePageText from "@/assets/text-no-bg.png";
@@ -48,6 +49,7 @@ const Home = ({ setSelectedPage }: Props) => {
             <ActionButton setSelectedPage={setSelectedPage}>
               Join Now
             </ActionButton>
+            <AnchorLink className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"></AnchorLink>
           </div>
         </div>
 
