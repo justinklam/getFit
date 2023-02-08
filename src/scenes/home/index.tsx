@@ -5,7 +5,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 
 // Image assets
 import HomePageText from "@/assets/text-no-bg.png";
-import HomePageGraphic from "@/assets/homePageGraphic-no-bg.png";
+import HomePageGraphic from "@/assets/homePageGraphic-alt.png";
 import Sponser1 from "@/assets/sponser-1.png";
 import Sponser2 from "@/assets/sponser-2.png";
 import Sponser3 from "@/assets/sponser-3.png";
@@ -33,14 +33,11 @@ const Home = ({ setSelectedPage }: Props) => {
               </div>
             </div>
 
-            <p>
+            <p className="mt-8 text-sm md:text-start">
               A gym for everyone. Discover the ultimate fitness experience at
               our gym where bouldering, yoga, and weightlifting come together.
-              Our bouldering wall offers challenges for all skill levels, our
-              yoga studio provides peace and relaxation, and our weightlifting
-              area is equipped with state-of-the-art equipment. Find the perfect
-              balance of physical challenge, mindfulness, and strength-building
-              at our unique gym!
+              Find the perfect balance of physical challenge, mindfulness, and
+              strength-building at our unique gym!
             </p>
           </div>
 
