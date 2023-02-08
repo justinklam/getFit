@@ -42,7 +42,7 @@ const Home = ({ setSelectedPage }: Props) => {
           </div>
 
           {/* Actions */}
-          <div>
+          <div className="mt-8 flex items-center gap-8">
             <ActionButton setSelectedPage={setSelectedPage}>
               Join Now
             </ActionButton>
