@@ -26,9 +26,9 @@ const Home = ({ setSelectedPage }: Props) => {
         {/* Main Header */}
         <div className="z-10 mt-32 md:basis-3/5">
           {/* Headings */}
-          <div>
-            <div>
-              <div>
+          <div className="md:-mt-20">
+            <div className="relative">
+              <div className="before:absolute before:-top-20 before:content-logotext">
                 <img src={HomePageText} alt="home-page-text" />
               </div>
             </div>
@@ -62,7 +62,7 @@ const Home = ({ setSelectedPage }: Props) => {
         {/* Image */}
         <div>
           <img
-            className="h-1/3 w-1/3"
+            className="h-1/3 w-2/3"
             src={HomePageGraphic}
             alt="home-pageGraphic"
           />
