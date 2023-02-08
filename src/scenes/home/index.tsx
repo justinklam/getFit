@@ -5,7 +5,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 
 // Image assets
 import HomePageText from "@/assets/text-no-bg.png";
-import HomePageGraphic from "@/assets/homePageGraphic.jpeg";
+import HomePageGraphic from "@/assets/homePageGraphic-no-bg.png";
 import Sponser1 from "@/assets/sponser-1.png";
 import Sponser2 from "@/assets/sponser-2.png";
 import Sponser3 from "@/assets/sponser-3.png";
