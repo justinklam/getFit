@@ -68,7 +68,7 @@ const Home = ({ setSelectedPage }: Props) => {
 
       {/* Sponsers & Partners */}
       {isAboveMediumScreens && (
-        <div>
+        <div className="h-[150px] w-full bg-primary-100 py-10">
           <div>
             <div>
               <img src={Sponser1} alt="sponser-1" />
