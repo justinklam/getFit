@@ -53,7 +53,18 @@ const Home = ({ setSelectedPage }: Props) => {
           </motion.div>
 
           {/* Actions */}
-          <div className="mt-8 flex items-center gap-8">
+          <motion.div
+            className="mt-8 flex items-center gap-8"
+            initial="hidden"
+            whileInView="visible"
+            // triggers when 50% of viewport is in view
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 }, // starting position
+              visible: { opacity: 1, x: 0 }, // end position
+            }}
+          >
             <ActionButton setSelectedPage={setSelectedPage}>
               Join Now
             </ActionButton>
@@ -65,7 +76,7 @@ const Home = ({ setSelectedPage }: Props) => {
             >
               <p>Learn More</p>
             </AnchorLink>
-          </div>
+          </motion.div>
         </div>
 
         {/* Image */}
