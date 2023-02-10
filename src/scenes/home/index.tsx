@@ -16,11 +16,10 @@ type Props = {
 };
 
 const Home = ({ setSelectedPage }: Props) => {
+  // media query - apply full above medium screen
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
 
   return (
-    // anchor is set for anchor-link-scroll for navigation
-    // media query - apply full above medium screen
     <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
       {/* Image & Main Header */}
       <div className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6">
@@ -58,6 +57,7 @@ const Home = ({ setSelectedPage }: Props) => {
             <ActionButton setSelectedPage={setSelectedPage}>
               Join Now
             </ActionButton>
+            {/* // anchor is set for anchor-link-scroll for navigation */}
             <AnchorLink
               className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
               onClick={() => setSelectedPage(SelectedPage.ContactUs)}
