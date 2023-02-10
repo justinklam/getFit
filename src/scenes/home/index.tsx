@@ -27,7 +27,18 @@ const Home = ({ setSelectedPage }: Props) => {
         {/* Main Header */}
         <div className="z-10 mt-32 md:basis-3/5">
           {/* Headings */}
-          <motion.div className="md:-mt-20">
+          <motion.div
+            className="md:-mt-20"
+            initial="hidden"
+            whileInView="visible"
+            // triggers when 50% of viewport is in view
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 }, // starting position
+              visible: { opacity: 1, x: 0 }, // end position
+            }}
+          >
             <div className="relative">
               <div className="before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-logotext">
                 <img src={HomePageText} alt="home-page-text" />
