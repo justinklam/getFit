@@ -1,3 +1,5 @@
+import { SelectedPage } from "@/shared/types";
+
 // Image assets
 import {
   HomeModernIcon,
@@ -5,9 +7,11 @@ import {
   AcademicCapIcon,
 } from "@heroicons/react/24/solid";
 
-type Props = {};
+type Props = {
+  setSelectedPage: (value: SelectedPage) => void;
+};
 
-const Benefits = (props: Props) => {
+const Benefits = ({ setSelectedPage }: Props) => {
   return <div>Benefits</div>;
 };
 
