@@ -26,6 +26,12 @@ const benefits = [
     description:
       "For those who are looking for a diverse range of workout options. The extensive class schedule features an array of offerings, from high-intensity interval training to relaxing yoga, ensuring that there is something for everyone. ",
   },
+  {
+    icon: <AcademicCapIcon className="h-6 w-6" />,
+    title: "Expert Trainers For All Levels",
+    description:
+      "For fitness enthusiasts or newcomers who are looking for personalized and expert guidance. The diverse team of trainers bring a wealth of knowledge, experience and passion to their work, and they are dedicated to helping each member achieve their fitness goals. Whether you're looking to build strength, improve flexibility, or train for a specific sport, you'll find a trainer who specializes in your area of interest. ",
+  },
 ];
 
 const Benefits = ({ setSelectedPage }: Props) => {
