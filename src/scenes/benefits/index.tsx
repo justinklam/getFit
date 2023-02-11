@@ -21,6 +21,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
         // for highlighting navbar section
         onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
       >
+        {/* Header */}
         <div className="md:my-5 md:w-3/5">
           <HText>A GYM FOR EVERYONE</HText>
           <p className="my-5 text-sm">
@@ -44,6 +45,8 @@ const Benefits = ({ setSelectedPage }: Props) => {
             mindfulness, and strength-building at our gym!
           </p>
         </div>
+        {/* Benefits */}
+        <div className="mt-5 items-center justify-between gap-8 md:flex"></div>
       </motion.div>
     </section>
   );
