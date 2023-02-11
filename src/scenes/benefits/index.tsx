@@ -1,4 +1,5 @@
 import { SelectedPage } from "@/shared/types";
+import HText from "@/shared/HText";
 import { motion } from "framer-motion";
 
 // Image assets
@@ -18,7 +19,11 @@ const Benefits = ({ setSelectedPage }: Props) => {
       <motion.div
         // for highlighting navbar section
         onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
-      ></motion.div>
+      >
+        <div>
+          <HText>A GYM FOR EVERYONE</HText>
+        </div>
+      </motion.div>
     </section>
   );
 };
