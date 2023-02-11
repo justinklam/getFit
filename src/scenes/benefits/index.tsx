@@ -22,7 +22,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
       >
         <div>
           <HText>A GYM FOR EVERYONE</HText>
-          <p>
+          <p className="my-5 text-sm">
             Welcome to our one-of-a-kind gym where we offer a unique combination
             of bouldering, yoga, and weightlifting!
             <br></br>
