@@ -1,4 +1,4 @@
-import { SelectedPage } from "@/shared/types";
+import { BenefitType, SelectedPage } from "@/shared/types";
 import HText from "@/shared/HText";
 import { motion } from "framer-motion";
 
@@ -13,7 +13,7 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
-const benefits = [
+const benefits: Array<BenefitType> = [
   {
     icon: <HomeModernIcon className="h-6 w-6" />,
     title: "Exceptional Facilities",
