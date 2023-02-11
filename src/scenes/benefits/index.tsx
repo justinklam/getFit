@@ -12,7 +12,9 @@ type Props = {
 };
 
 const Benefits = ({ setSelectedPage }: Props) => {
-  return <div>Benefits</div>;
+  return (
+    <section id="benefits" className="mx-auto min-h-full w-5/6 py-20"></section>
+  );
 };
 
 export default Benefits;
