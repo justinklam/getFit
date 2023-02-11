@@ -15,12 +15,13 @@ type Props = {
 
 const Benefits = ({ setSelectedPage }: Props) => {
   return (
-    <section id="benefits" className="mx-auto min-h-full w-5/6 py-20">
+    // added md:mt-20
+    <section id="benefits" className="mx-auto min-h-full w-5/6 py-20 md:mt-20">
       <motion.div
         // for highlighting navbar section
         onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
       >
-        <div>
+        <div className="md:my-5 md:w-3/5">
           <HText>A GYM FOR EVERYONE</HText>
           <p className="my-5 text-sm">
             Welcome to our one-of-a-kind gym where we offer a unique combination
