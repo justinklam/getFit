@@ -13,6 +13,21 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
+const benefits = [
+  {
+    icon: <HomeModernIcon className="h-6 w-6" />,
+    title: "Exceptional Facilities",
+    description:
+      "This gym offers a unique blend of physical activities for a well-rounded workout experience. The spacious facility boasts a dedicated bouldering area where climbers can test their strength and skills on challenging rock formations, while those seeking a more relaxed workout can attend yoga classes where they can stretch and strengthen their bodies in a peaceful and calming environment.",
+  },
+  {
+    icon: <UserGroupIcon className="h-6 w-6" />,
+    title: "Different Classes For All Your Needs",
+    description:
+      "For those who are looking for a diverse range of workout options. The extensive class schedule features an array of offerings, from high-intensity interval training to relaxing yoga, ensuring that there is something for everyone. ",
+  },
+];
+
 const Benefits = ({ setSelectedPage }: Props) => {
   return (
     // added md:mt-20
@@ -45,8 +60,13 @@ const Benefits = ({ setSelectedPage }: Props) => {
             mindfulness, and strength-building at our gym!
           </p>
         </div>
+
         {/* Benefits */}
-        <div className="mt-5 items-center justify-between gap-8 md:flex"></div>
+        <div className="mt-5 items-center justify-between gap-8 md:flex">
+          {benefits.map((benefit) => (
+            <Benefit />
+          ))}
+        </div>
       </motion.div>
     </section>
   );
