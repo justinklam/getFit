@@ -1,4 +1,5 @@
 import { SelectedPage } from "@/shared/types";
+import { motion } from "framer-motion";
 
 // Image assets
 import {
@@ -13,7 +14,12 @@ type Props = {
 
 const Benefits = ({ setSelectedPage }: Props) => {
   return (
-    <section id="benefits" className="mx-auto min-h-full w-5/6 py-20"></section>
+    <section id="benefits" className="mx-auto min-h-full w-5/6 py-20">
+      <motion.div
+        // for highlighting navbar section
+        onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
+      ></motion.div>
+    </section>
   );
 };
 
