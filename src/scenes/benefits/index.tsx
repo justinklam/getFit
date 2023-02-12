@@ -79,7 +79,12 @@ const Benefits = ({ setSelectedPage }: Props) => {
         </div>
 
         {/* Benefits */}
-        <motion.div className="mt-5 items-center justify-between gap-8 md:flex">
+        <motion.div
+          className="mt-5 items-center justify-between gap-8 md:flex"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+        >
           {benefits.map((benefit: BenefitType) => (
             <Benefit
               key={benefit.title}
