@@ -54,7 +54,18 @@ const Benefits = ({ setSelectedPage }: Props) => {
         onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
       >
         {/* Header */}
-        <div className="md:my-5 md:w-3/5">
+        <motion.div
+          className="md:my-5 md:w-3/5"
+          initial="hidden"
+          whileInView="visible"
+          // triggers when 50% of viewport is in view
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 }, // starting position
+            visible: { opacity: 1, x: 0 }, // end position
+          }}
+        >
           <HText>A GYM FOR EVERYONE</HText>
           <p className="my-5 text-sm">
             Welcome to our one-of-a-kind gym where we offer a unique combination
@@ -76,7 +87,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
             Come and experience the perfect blend of physical challenge,
             mindfulness, and strength-building at our gym!
           </p>
-        </div>
+        </motion.div>
 
         {/* Benefits */}
         <motion.div
