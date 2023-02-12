@@ -60,7 +60,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
           whileInView="visible"
           // triggers when 50% of viewport is in view
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
+          transition={{ duration: 0.5 }}
           variants={{
             hidden: { opacity: 0, x: -50 }, // starting position
             visible: { opacity: 1, x: 0 }, // end position
