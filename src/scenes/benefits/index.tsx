@@ -37,6 +37,14 @@ const benefits: Array<BenefitType> = [
   },
 ];
 
+const container = {
+  hidden: {},
+  visible: {
+    // all child components will be staggered
+    transition: { staggerChildren: 0.2 },
+  },
+};
+
 const Benefits = ({ setSelectedPage }: Props) => {
   return (
     // added md:mt-20
@@ -71,7 +79,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
         </div>
 
         {/* Benefits */}
-        <div className="mt-5 items-center justify-between gap-8 md:flex">
+        <motion.div className="mt-5 items-center justify-between gap-8 md:flex">
           {benefits.map((benefit: BenefitType) => (
             <Benefit
               key={benefit.title}
@@ -81,7 +89,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
               setSelectedPage={setSelectedPage}
             />
           ))}
-        </div>
+        </motion.div>
       </motion.div>
     </section>
   );
