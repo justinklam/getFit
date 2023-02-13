@@ -127,6 +127,23 @@ const Benefits = ({ setSelectedPage }: Props) => {
               </div>
             </div>
             {/* Description */}
+            <div>
+              <p className="my-5">
+                {" "}
+                Sed sit amet erat ac nulla fringilla cursus ut nec tortor. Sed
+                tristique at ipsum sed maximus. Phasellus lacinia tortor justo,
+                eget rutrum ante aliquam vehicula. In congue dui eget hendrerit
+                eleifend. Sed pharetra pharetra lorem id tempus. Maecenas vitae
+                lacinia arcu. Nullam et imperdiet dui.{" "}
+              </p>
+              <p className="mb-5">
+                Aliquam porta hendrerit ex, in venenatis augue commodo sit amet.
+                Mauris est purus, porta vel vulputate at, tempor sit amet lacus.
+                Maecenas posuere lorem non nibh porttitor consectetur. Aliquam
+                bibendum sem lorem, eleifend imperdiet ipsum sagittis vel. Ut
+                porta justo enim, sit amet pellentesque ex iaculis vitae.{" "}
+              </p>
+            </div>
             {/* Button */}
           </div>
         </div>
