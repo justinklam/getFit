@@ -112,7 +112,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
         </motion.div>
 
         {/* Graphics & Description */}
-        <div>
+        <div className="mt-10 items-center justify-between gap-20 md:mt-28 md:flex">
           {/* Graphics */}
           <img
             className="mx-auto"
@@ -124,7 +124,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
           <div>
             {/* Title */}
             <div className="relative">
-              <div className="before:absolute before:-top-20 before:-left-20 before:z-[1]">
+              <div className="mt-10 before:absolute before:-top-20 before:-left-20 before:z-[1]">
                 <div>
                   <HText>
                     GET FIT WITH US{" "}
