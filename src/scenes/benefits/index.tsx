@@ -126,6 +126,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 </div>
               </div>
             </div>
+
             {/* Description */}
             <div>
               <p className="my-5">
@@ -144,7 +145,11 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 porta justo enim, sit amet pellentesque ex iaculis vitae.{" "}
               </p>
             </div>
+
             {/* Button */}
+            <div className="relative mt-16">
+              <div className="before:content before:absolute before:-bottom-20 before:right-40 before:z-[-1]"></div>
+            </div>
           </div>
         </div>
       </motion.div>
