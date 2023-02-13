@@ -30,7 +30,7 @@ function App() {
   }, []);
 
   return (
-    <div className="app bg-gray-20">
+    <div className="app bg-gray-20 scrollbar scrollbar-track-primary-100/20 scrollbar-thumb-secondary-500/80">
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
