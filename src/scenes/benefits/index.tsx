@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 // Components
 import Benefit from "./Benefit";
+import ActionButton from "@/shared/ActionButton";
 
 // Image assets
 import {
@@ -148,7 +149,11 @@ const Benefits = ({ setSelectedPage }: Props) => {
 
             {/* Button */}
             <div className="relative mt-16">
-              <div className="before:content before:absolute before:-bottom-20 before:right-40 before:z-[-1]"></div>
+              <div className="before:content before:absolute before:-bottom-20 before:right-40 before:z-[-1]">
+                <ActionButton setSelectedPage={setSelectedPage}>
+                  Join Now
+                </ActionButton>
+              </div>
             </div>
           </div>
         </div>
