@@ -107,6 +107,29 @@ const Benefits = ({ setSelectedPage }: Props) => {
             />
           ))}
         </motion.div>
+
+        {/* Graphics & Description */}
+        <div>
+          {/* Graphics */}
+          <img src="" alt="" />
+
+          {/* Description */}
+          <div>
+            {/* Title */}
+            <div className="relative">
+              <div className="before:absolute before:-top-20 before:-left-20 before:z-[1]">
+                <div>
+                  <HText>
+                    GET FIT WITH US{" "}
+                    <span className="text-secondary-500">HERE</span>
+                  </HText>
+                </div>
+              </div>
+            </div>
+            {/* Description */}
+            {/* Button */}
+          </div>
+        </div>
       </motion.div>
     </section>
   );
