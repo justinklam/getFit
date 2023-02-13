@@ -12,6 +12,7 @@ import {
   UserGroupIcon,
   AcademicCapIcon,
 } from "@heroicons/react/24/solid";
+import BenefitsPageGraphic from "@/assets/benefits-no-bg.png";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -113,7 +114,11 @@ const Benefits = ({ setSelectedPage }: Props) => {
         {/* Graphics & Description */}
         <div>
           {/* Graphics */}
-          <img src="" alt="" />
+          <img
+            className="mx-auto"
+            src={BenefitsPageGraphic}
+            alt="benefits-page-graphic"
+          />
 
           {/* Description */}
           <div>
