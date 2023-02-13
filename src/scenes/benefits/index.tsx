@@ -84,6 +84,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
             equipped with the latest equipment, allowing you to achieve your
             fitness goals with ease.
             <br></br>
+            <br></br>
             Come and experience the perfect blend of physical challenge,
             mindfulness, and strength-building at our gym!
           </p>
@@ -131,18 +132,17 @@ const Benefits = ({ setSelectedPage }: Props) => {
             <div>
               <p className="my-5">
                 {" "}
-                Sed sit amet erat ac nulla fringilla cursus ut nec tortor. Sed
-                tristique at ipsum sed maximus. Phasellus lacinia tortor justo,
-                eget rutrum ante aliquam vehicula. In congue dui eget hendrerit
-                eleifend. Sed pharetra pharetra lorem id tempus. Maecenas vitae
-                lacinia arcu. Nullam et imperdiet dui.{" "}
+                Get fit and feel great with us! Our gym offers a welcoming and
+                supportive environment for all fitness levels. With
+                state-of-the-art equipment, a variety of group fitness classes,
+                and knowledgeable personal trainers, you'll have everything you
+                need to reach your fitness goals.{" "}
               </p>
               <p className="mb-5">
-                Aliquam porta hendrerit ex, in venenatis augue commodo sit amet.
-                Mauris est purus, porta vel vulputate at, tempor sit amet lacus.
-                Maecenas posuere lorem non nibh porttitor consectetur. Aliquam
-                bibendum sem lorem, eleifend imperdiet ipsum sagittis vel. Ut
-                porta justo enim, sit amet pellentesque ex iaculis vitae.{" "}
+                Whether you're just starting out or you're a seasoned athlete,
+                our gym has something for everyone. Come join us and experience
+                the difference that our community can make in your fitness
+                journey. Sign up now and start transforming your life!"{" "}
               </p>
             </div>
 
