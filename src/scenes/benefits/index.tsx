@@ -125,12 +125,22 @@ const Benefits = ({ setSelectedPage }: Props) => {
             {/* Title */}
             <div className="relative">
               <div className="mt-10 before:absolute before:-top-20 before:-left-20 before:z-[1]">
-                <div>
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  // triggers when 50% of viewport is in view
+                  viewport={{ once: true, amount: 0.5 }}
+                  transition={{ duration: 0.5 }}
+                  variants={{
+                    hidden: { opacity: 0, x: -50 }, // starting position
+                    visible: { opacity: 1, x: 0 }, // end position
+                  }}
+                >
                   <HText>
                     GET FIT WITH US{" "}
                     <span className="text-secondary-500">HERE</span>
                   </HText>
-                </div>
+                </motion.div>
               </div>
             </div>
 
