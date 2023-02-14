@@ -132,7 +132,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                   viewport={{ once: true, amount: 0.5 }}
                   transition={{ duration: 0.5 }}
                   variants={{
-                    hidden: { opacity: 0, x: -50 }, // starting position
+                    hidden: { opacity: 0, x: 50 }, // starting position
                     visible: { opacity: 1, x: 0 }, // end position
                   }}
                 >
