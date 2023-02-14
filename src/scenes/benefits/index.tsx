@@ -145,7 +145,17 @@ const Benefits = ({ setSelectedPage }: Props) => {
             </div>
 
             {/* Description */}
-            <div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              // triggers when 50% of viewport is in view
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, x: 50 }, // starting position
+                visible: { opacity: 1, x: 0 }, // end position
+              }}
+            >
               <p className="my-5">
                 {" "}
                 Get fit and feel great with us! Our gym offers a welcoming and
@@ -160,7 +170,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 the difference that our community can make in your fitness
                 journey. Sign up now and start transforming your life!"{" "}
               </p>
-            </div>
+            </motion.div>
 
             {/* Button */}
             <div className="relative mt-16">
