@@ -1,4 +1,5 @@
 import { SelectedPage } from "@/shared/types";
+import { motion } from "framer-motion";
 
 // Image assets
 import classes1 from "@/assets/classes-1.jpeg";
@@ -12,7 +13,11 @@ type Props = {
 };
 
 const OurClasses = ({ setSelectedPage }: Props) => {
-  return <div>OurClasses</div>;
+  return (
+    <section id="ourclasses" className="w-full bg-primary-100 py-40">
+      <motion.div></motion.div>
+    </section>
+  );
 };
 
 export default OurClasses;
