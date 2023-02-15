@@ -1,4 +1,5 @@
 import { SelectedPage } from "@/shared/types";
+import HText from "@/shared/HText";
 import { motion } from "framer-motion";
 
 // Image assets
@@ -29,7 +30,19 @@ const OurClasses = ({ setSelectedPage }: Props) => {
             hidden: { opacity: 0, x: -50 }, // starting position
             visible: { opacity: 1, x: 0 }, // end position
           }}
-        ></motion.div>
+        >
+          <div>
+            <HText>Our Classes</HText>
+            <p>
+              Our gym is proud to offer a wide range of classes to suit every
+              fitness level and interest. From high-intensity cardio to relaxing
+              yoga, we've got something for everyone. Our expert instructors
+              will guide you through each class, ensuring that you get the most
+              out of your workout. Our classes are designed to challenge and
+              inspire you, while keeping you motivated and engaged.{" "}
+            </p>
+          </div>
+        </motion.div>
       </motion.div>
     </section>
   );
