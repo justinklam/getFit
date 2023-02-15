@@ -31,8 +31,12 @@ const OurClasses = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 }, // end position
           }}
         >
+          {/* Description */}
           <div className="md:w-3/5">
+            {/* Title */}
             <HText>Our Classes</HText>
+
+            {/* Class Description */}
             <p className="py-5">
               Our gym is proud to offer a wide range of classes to suit every
               fitness level and interest. From high-intensity cardio to relaxing
@@ -43,6 +47,9 @@ const OurClasses = ({ setSelectedPage }: Props) => {
             </p>
           </div>
         </motion.div>
+
+        {/* Class Image Slider */}
+        <div className="mt-10 h-[350px] w-full overflow-x-auto overflow-y-hidden"></div>
       </motion.div>
     </section>
   );
