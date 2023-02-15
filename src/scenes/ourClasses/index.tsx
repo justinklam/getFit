@@ -31,9 +31,9 @@ const OurClasses = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 }, // end position
           }}
         >
-          <div>
+          <div className="md:w-3/5">
             <HText>Our Classes</HText>
-            <p>
+            <p className="py-5">
               Our gym is proud to offer a wide range of classes to suit every
               fitness level and interest. From high-intensity cardio to relaxing
               yoga, we've got something for everyone. Our expert instructors
