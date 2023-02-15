@@ -7,13 +7,6 @@ import Home from "@/scenes/home";
 import Benefits from "@/scenes/benefits";
 import OurClasses from "@/scenes/ourClasses";
 
-// Image assets
-import classes1 from "@/assets/classes-1.jpeg";
-import classes2 from "@/assets/classes-2.jpeg";
-import classes3 from "@/assets/classes-3.jpeg";
-import classes4 from "@/assets/classes-4.jpeg";
-import classes5 from "@/assets/classes-5.jpeg";
-
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
     SelectedPage.Home
