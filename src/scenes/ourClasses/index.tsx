@@ -20,6 +20,11 @@ const classes = [
       "Connect mind, body, and spirit with our yoga classes led by expert instructors. Suitable for all levels. Our classes focus on strength, flexibility, stress reduction, and mindfulness in a tranquil studio. Join us and experience the transformative power of yoga.",
   },
   {
+    name: "HIIT & Cardio",
+    description:
+      "Transform your body and get in shape with our high-intensity interval training (HIIT) classes. Our expert trainers will guide you through a series of heart-pumping exercises designed to maximize fat burn and increase endurance. With our supportive community, you'll be motivated to challenge yourself and exceed your fitness goals. ",
+  },
+  {
     name: "Bouldering",
     description:
       "Experience the thrill of bouldering with our expert lessons in a safe and fun environment. Learn proper techniques and safety measures, and challenge yourself with our state-of-the-art wall and variety of routes. Join us and become a skilled and confident climber.",
