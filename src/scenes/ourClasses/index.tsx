@@ -13,6 +13,24 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
+const classes = [
+  {
+    name: "Yoga",
+    description:
+      "Connect mind, body, and spirit with our yoga classes led by expert instructors. Suitable for all levels. Our classes focus on strength, flexibility, stress reduction, and mindfulness in a tranquil studio. Join us and experience the transformative power of yoga.",
+  },
+  {
+    name: "Bouldering",
+    description:
+      "Experience the thrill of bouldering with our expert lessons in a safe and fun environment. Learn proper techniques and safety measures, and challenge yourself with our state-of-the-art wall and variety of routes. Join us and become a skilled and confident climber.",
+  },
+  {
+    name: "Weightlifting Classes",
+    description:
+      "Build muscle and increase strength with our weightlifting classes for all levels. Led by experienced trainers in a state-of-the-art facility, our focus on proper form and technique ensures effective workouts with minimal risk of injury. Join us to achieve your fitness goals.",
+  },
+];
+
 const OurClasses = ({ setSelectedPage }: Props) => {
   return (
     <section id="ourclasses" className="w-full bg-primary-100 py-40">
@@ -49,7 +67,13 @@ const OurClasses = ({ setSelectedPage }: Props) => {
         </motion.div>
 
         {/* Class Image Slider */}
-        <div className="mt-10 h-[350px] w-full overflow-x-auto overflow-y-hidden"></div>
+        <div className="mt-10 h-[350px] w-full overflow-x-auto overflow-y-hidden">
+          <ul className="w-[2800px] whitespace-nowrap">
+            {classes.map((item, index) => (
+              <Class />
+            ))}
+          </ul>
+        </div>
       </motion.div>
     </section>
   );
