@@ -17,7 +17,20 @@ const OurClasses = ({ setSelectedPage }: Props) => {
     <section id="ourclasses" className="w-full bg-primary-100 py-40">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.OurClasses)}
-      ></motion.div>
+      >
+        <motion.div
+          className="mx-auto w-5/6"
+          initial="hidden"
+          whileInView="visible"
+          // triggers when 50% of viewport is in view
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 }, // starting position
+            visible: { opacity: 1, x: 0 }, // end position
+          }}
+        ></motion.div>
+      </motion.div>
     </section>
   );
 };
