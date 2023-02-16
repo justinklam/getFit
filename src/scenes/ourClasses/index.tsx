@@ -2,6 +2,9 @@ import { ClassType, SelectedPage } from "@/shared/types";
 import HText from "@/shared/HText";
 import { motion } from "framer-motion";
 
+// Components
+import Class from "./Class";
+
 // Image assets
 import classes1 from "@/assets/classes-1.jpeg";
 import classes2 from "@/assets/classes-2.jpeg";
@@ -36,7 +39,7 @@ const classes: Array<ClassType> = [
     name: "Weightlifting Classes",
     description:
       "Build muscle and increase strength with our weightlifting classes for all levels. Led by experienced trainers in a state-of-the-art facility, our focus on proper form and technique ensures effective workouts with minimal risk of injury. Join us to achieve your fitness goals.",
-    images: classes5,
+    image: classes5,
   },
 ];
 
@@ -78,8 +81,13 @@ const OurClasses = ({ setSelectedPage }: Props) => {
         {/* Class Image Slider */}
         <div className="mt-10 h-[350px] w-full overflow-x-auto overflow-y-hidden">
           <ul className="w-[2800px] whitespace-nowrap">
-            {classes.map((item, index) => (
-              <Class />
+            {classes.map((item: ClassType, index) => (
+              <Class
+                key={`${item.name}-${index}`}
+                name={item.name}
+                description={item.description}
+                image={item.image}
+              />
             ))}
           </ul>
         </div>
