@@ -1,8 +1,10 @@
-import React from "react";
+type Props = {
+  name: string;
+  description?: string;
+  image: string;
+};
 
-type Props = {};
-
-const Class = (props: Props) => {
+const Class = ({ name, description, image }: Props) => {
   return <div>Class</div>;
 };
 
