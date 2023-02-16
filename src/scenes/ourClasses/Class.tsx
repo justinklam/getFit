@@ -5,7 +5,7 @@ type Props = {
 };
 
 const Class = ({ name, description, image }: Props) => {
-  return <div>Class</div>;
+  return <li className="in-line-block relative mx-5 h-[380px] w-[450px]"></li>;
 };
 
 export default Class;
