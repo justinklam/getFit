@@ -8,7 +8,7 @@ import Class from "./Class";
 // Image assets
 import classes1 from "@/assets/classes-1.jpeg";
 import classes2 from "@/assets/classes-2.jpeg";
-// import classes3 from "@/assets/classes-3.jpeg";
+import classes3 from "@/assets/classes-3.jpeg";
 import classes4 from "@/assets/classes-4.jpeg";
 import classes5 from "@/assets/classes-5.jpeg";
 
@@ -24,6 +24,10 @@ const classes: Array<ClassType> = [
     description:
       "Transform your body and get in shape with our high-intensity interval training (HIIT) classes. Our expert trainers will guide you through a series of heart-pumping exercises designed to maximize fat burn and increase endurance. With our supportive community, you'll be motivated to challenge yourself and exceed your fitness goals. ",
     image: classes2,
+  },
+  {
+    name: "Yoga Classes",
+    image: classes3,
   },
   {
     name: "Bouldering",
