@@ -11,6 +11,7 @@ import classes2 from "@/assets/classes-2.jpeg";
 import classes3 from "@/assets/classes-3.jpeg";
 import classes4 from "@/assets/classes-4.jpeg";
 import classes5 from "@/assets/classes-5.jpeg";
+import classes6 from "@/assets/classes-6.jpeg";
 
 const classes: Array<ClassType> = [
   {
@@ -40,6 +41,12 @@ const classes: Array<ClassType> = [
     description:
       "Build muscle and increase strength with our weightlifting classes for all levels. Led by experienced trainers in a state-of-the-art facility, our focus on proper form and technique ensures effective workouts with minimal risk of injury. Join us to achieve your fitness goals.",
     image: classes5,
+  },
+  {
+    name: "Calisthenic Classes",
+    description:
+      "Build strength and flexibility with bodyweight exercises in our calisthenics classes. Suitable for all levels, our expert trainers provide modifications to challenge and progress you towards your goals. Join us for a fun and dynamic workout that requires no equipment.",
+    image: classes6,
   },
 ];
 
