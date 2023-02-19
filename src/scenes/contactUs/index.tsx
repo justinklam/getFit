@@ -40,6 +40,9 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             schedules.
           </p>
         </motion.div>
+
+        {/* Form & Image */}
+        <div className="mt-10 justify-between gap-8 md:flex"></div>
       </motion.div>
     </section>
   );
