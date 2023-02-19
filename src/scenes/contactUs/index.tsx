@@ -11,6 +11,19 @@ type Props = {
 };
 
 const ContactUs = ({ setSelectedPage }: Props) => {
+  const {
+    register,
+    trigger,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = async (e: any) => {
+    const isValid = await trigger();
+    if (!isValid) {
+      e.preventDefault();
+    }
+  };
+
   return (
     <section id="contactus" className="mx-auto w-5/6 pt-24 pb-32">
       <motion.div
@@ -54,7 +67,9 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               hidden: { opacity: 0, y: 50 }, // starting position from top
               visible: { opacity: 1, y: 0 }, // end position from bot
             }}
-          ></motion.div>
+          >
+            <form target="_blank" onSubmit={onSubmit}></form>
+          </motion.div>
         </div>
       </motion.div>
     </section>
