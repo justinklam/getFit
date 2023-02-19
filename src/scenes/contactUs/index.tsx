@@ -1,4 +1,5 @@
 import { SelectedPage } from "@/shared/types";
+import HText from "@/shared/HText";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 
@@ -27,7 +28,11 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             hidden: { opacity: 0, x: -50 }, // starting position
             visible: { opacity: 1, x: 0 }, // end position
           }}
-        ></motion.div>
+        >
+          <HText>
+            <span className="text-primary-500">JOIN NOW</span> TO GET IN SHAPE
+          </HText>
+        </motion.div>
       </motion.div>
     </section>
   );
