@@ -32,6 +32,13 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           <HText>
             <span className="text-primary-500">JOIN NOW</span> TO GET IN SHAPE
           </HText>
+          <p className="my-5">
+            We're always here to answer any questions or concerns you may have
+            about our gym. You can contact us by phone, email, or through our
+            website. Our knowledgeable and friendly staff are happy to assist
+            you with anything you need, from membership inquiries to class
+            schedules.
+          </p>
         </motion.div>
       </motion.div>
     </section>
