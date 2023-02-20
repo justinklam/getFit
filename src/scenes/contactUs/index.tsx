@@ -74,7 +74,16 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               method="POST"
               // action={`${process.env.FORM_EMAIL}`}
             >
-              <input className="w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white" />
+              <input
+                className="w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white"
+                type="text"
+                placeholder="NAME"
+                // saves the input into the name property in react-hook-form
+                {...register("name", {
+                  required: true,
+                  maxLength: 100,
+                })}
+              />
             </form>
           </motion.div>
         </div>
