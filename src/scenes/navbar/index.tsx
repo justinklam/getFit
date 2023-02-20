@@ -27,7 +27,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
     <nav>
       <div
         // NOTE - height added
-        className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 h-1/5 w-full py-6 opacity-90`}
+        className={`${navbarBackground} ${flexBetween} fixed top-0 z-40 h-1/5 w-full py-6 opacity-90`}
       >
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} gap-15 w-full`}>
@@ -83,7 +83,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
       </div>
       {/* Mobile Modal */}
       {!isAboveMediumScreens && isMenuToggled && (
-        <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl">
+        <div className="fixed right-0 bottom-0 z-50 h-full w-[300px] bg-primary-100 drop-shadow-xl">
           {/* Closing Icon */}
           <div className="flex justify-end p-12">
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
