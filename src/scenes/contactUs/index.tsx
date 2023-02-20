@@ -68,7 +68,12 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, y: 0 }, // end position from bot
             }}
           >
-            <form target="_blank" onSubmit={onSubmit}></form>
+            <form
+              target="_blank"
+              onSubmit={onSubmit}
+              method="POST"
+              action={`${process.env.FORM_EMAIL}`}
+            ></form>
           </motion.div>
         </div>
       </motion.div>
