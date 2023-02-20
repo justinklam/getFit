@@ -76,6 +76,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               method="POST"
               // action={`${process.env.FORM_EMAIL}`}
             >
+              {/* Name */}
               <input
                 className={inputStyle}
                 type="text"
@@ -92,6 +93,26 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                   {errors.name.type === "required" && "This field is required"}
                   {errors.name.type === "maxLength" &&
                     "Max length is 100 characters"}
+                </p>
+              )}
+
+              {/* Email */}
+              <input
+                className={inputStyle}
+                type="text"
+                placeholder="EMAIL"
+                // saves the input into the email property in react-hook-form
+                {...register("email", {
+                  // required: true,
+                  // reg-ex to check if it's a valid email
+                  pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                })}
+              />
+              {/* Error - Email */}
+              {errors.email && (
+                <p className="mt-1 text-primary-500">
+                  {/* {errors.email.type === "required" && "This field is required"} */}
+                  {errors.email.type === "pattern" && "Invalid email address"}
                 </p>
               )}
             </form>
