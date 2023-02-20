@@ -11,7 +11,7 @@ type Props = {
 };
 
 const ContactUs = ({ setSelectedPage }: Props) => {
-  const inputStyle = `w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white`;
+  const inputStyle = `mt-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white`;
 
   const {
     register,
