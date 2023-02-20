@@ -11,6 +11,8 @@ type Props = {
 };
 
 const ContactUs = ({ setSelectedPage }: Props) => {
+  const inputStyle = `w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white`;
+
   const {
     register,
     trigger,
@@ -75,7 +77,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               // action={`${process.env.FORM_EMAIL}`}
             >
               <input
-                className="w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white"
+                className={inputStyle}
                 type="text"
                 placeholder="NAME"
                 // saves the input into the name property in react-hook-form
@@ -84,6 +86,14 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                   maxLength: 100,
                 })}
               />
+              {/* Error - Name */}
+              {errors.name && (
+                <p className="mt-1 text-primary-500">
+                  {errors.name.type === "required" && "This field is required"}
+                  {errors.name.type === "maxLength" &&
+                    "Max length is 100 characters"}
+                </p>
+              )}
             </form>
           </motion.div>
         </div>
