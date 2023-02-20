@@ -72,8 +72,10 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               target="_blank"
               onSubmit={onSubmit}
               method="POST"
-              action={`${process.env.FORM_EMAIL}`}
-            ></form>
+              // action={`${process.env.FORM_EMAIL}`}
+            >
+              <input className="w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white" />
+            </form>
           </motion.div>
         </div>
       </motion.div>
