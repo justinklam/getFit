@@ -115,6 +115,27 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                   {errors.email.type === "pattern" && "Invalid email address"}
                 </p>
               )}
+
+              {/* Message */}
+              <input
+                className={inputStyle}
+                type="text"
+                placeholder="MESSAGE"
+                // saves the input into the name property in react-hook-form
+                {...register("message", {
+                  required: true,
+                  maxLength: 2000,
+                })}
+              />
+              {/* Error - Message */}
+              {errors.message && (
+                <p className="mt-1 text-primary-500">
+                  {errors.message.type === "required" &&
+                    "This field is required"}
+                  {errors.message.type === "maxLength" &&
+                    "Max length is 2000 characters"}
+                </p>
+              )}
             </form>
           </motion.div>
         </div>
