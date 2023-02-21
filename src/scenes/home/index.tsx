@@ -6,7 +6,8 @@ import { motion } from "framer-motion";
 
 // Image assets
 import HomePageText from "@/assets/text-no-bg.png";
-import HomePageGraphic from "@/assets/homePageGraphic-alt.png";
+// import HomePageGraphic from "@/assets/homePageGraphic-alt.png";
+import HomePageGraphicAlt from "@/assets/homePageGraphic3-circle.png";
 import Sponser1 from "@/assets/sponser-1.png";
 import Sponser2 from "@/assets/sponser-2.png";
 import Sponser3 from "@/assets/sponser-3.png";
@@ -87,7 +88,7 @@ const Home = ({ setSelectedPage }: Props) => {
         <div className="flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-items-end">
           <img
             className="h-1/3 w-2/3"
-            src={HomePageGraphic}
+            src={HomePageGraphicAlt}
             alt="home-pageGraphic"
           />
         </div>
