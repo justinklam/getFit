@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 // Image assets
 import HomePageText from "@/assets/text-no-bg.png";
 // import HomePageGraphic from "@/assets/homePageGraphic-alt.png";
-import HomePageGraphicAlt from "@/assets/homePageGraphic3-circle.png";
+import HomePageGraphicAlt from "@/assets/homePageGraphic5-circle.png";
 import Sponser1 from "@/assets/sponser-1.png";
 import Sponser2 from "@/assets/sponser-2.png";
 import Sponser3 from "@/assets/sponser-3.png";
