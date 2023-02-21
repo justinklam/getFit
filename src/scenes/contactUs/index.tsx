@@ -162,7 +162,14 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             }}
           >
             {/* Gym Banner */}
-            <div className="w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-logotext"></div>
+            {/* <div className="w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-logotext"> */}
+            <div className="w-full">
+              <img
+                className="w-full"
+                src={ContactUsGraphic}
+                alt="contact-us-graphic"
+              />
+            </div>
           </motion.div>
         </div>
       </motion.div>
