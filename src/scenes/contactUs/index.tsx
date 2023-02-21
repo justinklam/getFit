@@ -148,7 +148,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             </form>
           </motion.div>
 
-          {/* Contact Us Image & Text*/}
+          {/* Contact Us Image & Gym Banner*/}
           <motion.div
             className="basis 2/5 relative mt-16 md:mt-0"
             initial="hidden"
@@ -160,7 +160,10 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               hidden: { opacity: 0, x: -50 }, // starting position
               visible: { opacity: 1, x: 0 }, // end position
             }}
-          ></motion.div>
+          >
+            {/* Gym Banner */}
+            <div className="w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-logotext"></div>
+          </motion.div>
         </div>
       </motion.div>
     </section>
