@@ -74,7 +74,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               target="_blank"
               onSubmit={onSubmit}
               method="POST"
-              action={`${import.meta.env.VITE_FORM_EMAIL}`}
+              // action={`${import.meta.env.VITE_FORM_EMAIL}`}
+              action="https://formsubmit.co/91f90018781cf6352c7ab7a4e6e66b99"
             >
               {/* Name */}
               <input
@@ -117,9 +118,10 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               )}
 
               {/* Message */}
-              <input
+              <textarea
                 className={inputStyle}
-                type="text"
+                rows={4}
+                cols={5}
                 placeholder="MESSAGE"
                 // saves the input into the name property in react-hook-form
                 {...register("message", {
