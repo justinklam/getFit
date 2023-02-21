@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 
 // Image assets
-import ContactUsGraphic from "@/assets/contactUs.jpeg";
+import ContactUsGraphic from "@/assets/contactUs.png";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -147,6 +147,9 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               </button>
             </form>
           </motion.div>
+
+          {/* Contact Us Image & Text*/}
+          <motion.div className="basis 2/5 relative mt-16 md:mt-0"></motion.div>
         </div>
       </motion.div>
     </section>
