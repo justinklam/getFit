@@ -74,7 +74,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               target="_blank"
               onSubmit={onSubmit}
               method="POST"
-              // action={`${process.env.FORM_EMAIL}`}
+              action={`${import.meta.env.VITE_FORM_EMAIL}`}
             >
               {/* Name */}
               <input
