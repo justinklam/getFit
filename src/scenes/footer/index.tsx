@@ -1,8 +1,6 @@
 import Logo from "@/assets/logo-no-bg-sm.png";
 
-type Props = {};
-
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <footer className="bg-primary-100 py-10">
       <div className="justify-content mx-auto w-5/6 gap-16 md:flex">
