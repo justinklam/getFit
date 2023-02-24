@@ -26,9 +26,9 @@ const Footer = () => {
         {/* Links */}
         <div className="mt-10 basis-1/4 md:mt-0">
           <h4 className="font-bold">Links</h4>
-          <p className="my-5">Link1</p>
+          {/* <p className="my-5">Link1</p>
           <p className="my-5">Link2</p>
-          <p className="my-5">Link3</p>
+          <p className="my-5">Link3</p> */}
         </div>
 
         {/* Contact */}
