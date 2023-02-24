@@ -1,8 +1,10 @@
 # getFit
 
-<p>Welcome to <b>getFit</b>, a Front-end SPA built to showcase responsive design and animations</p>
+<p>Welcome to <b>getFit</b>, a Front-end SPA built to showcase responsive design and animations!</p>
 
-<p>Front-end built with TypeScript and React</p>
+<p>Front-end built with TypeScript and React.</p>
+
+<p>Deployed Live <a href="https://getfit.pages.dev/">Here!</a></p>
 
 ## Preview
 
