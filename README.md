@@ -27,13 +27,16 @@ Core:
 - TypeScript
 - React
 
+- Tailwind CSS
+- Framer Motion
+- React-Hook-Form
 ```
 
 ## Available Scripts
 
 In the file directory each, open the app with:
 
-### `npm start`
+### `npm run dev`
 
 Open [http://localhost:5173](http://localhost:3000) to view it in your browser.
 
